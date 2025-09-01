@@ -117,12 +117,12 @@ class UsersController extends Controller
      */
     public function destroy(Request $request)
     {
-        $user = User::findOrFail($request->id);
+        // $user = User::findOrFail($request->id);
 
-        if ($user->delete()) {
-            return response()->json(['message' => 'User deleted successfully.', 'status' => true]);
-        }
+        // if ($user->delete()) {
+        //     return response()->json(['message' => 'User deleted successfully.', 'status' => true]);
+        // }
 
-        return response()->json(['message' => 'Oops something went wrong!', 'status' => false]);
+        // return response()->json(['message' => 'Oops something went wrong!', 'status' => false]);
     }
 }
